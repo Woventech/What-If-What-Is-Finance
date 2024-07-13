@@ -3,7 +3,7 @@
 import subprocess
 
 def run():
-    subprocess.run(["streamlit", "run", "app.py"])
+    subprocess.run(["streamlit", "run", "streamlit_app.py"])
 
 if __name__ == "__main__":
     run()
