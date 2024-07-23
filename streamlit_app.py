@@ -58,7 +58,7 @@ def run_streamlit_app():
         f"{sym} - {desc}" for sym, desc in stock_symbols.items()
     ]
 
-    # Casella di ricerca per i simboli delle azioni
+    # Casella di ricerca per i simboli delle azioni 
     search_query = st.text_input(
         "Cerca un prodotto finanziario (es. AAPL, GOOGL, etc.)")
 
@@ -80,7 +80,7 @@ def run_streamlit_app():
                                               'No description available')
                 filtered_descrizioni.append(f"{symbol} - {description}")
         except Exception as e:
-            st.error(f"Errore durante la ricerca: {e}")
+            st.error(f"Errore durante la ricerca!: {e}")
 
     # Selectbox per i simboli delle azioni filtrati
     if filtered_descrizioni:
